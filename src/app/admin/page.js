@@ -16,11 +16,9 @@ import Loading from "@/components/Loading/Loading";
 import {
   Dashboard,
   GuestManagement,
-  PaymentDetails,
 } from "@/components/Admin/adminIndex";
 import { MdDashboard } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
-import { GiTakeMyMoney } from "react-icons/gi";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/firebase/config";
 
@@ -117,8 +115,6 @@ export default function Admin() {
         return <Dashboard guests={guests} />;
       case "guest-management":
         return <GuestManagement guests={guests} setGuests={setGuests} />;
-      case "payment-details":
-        return <PaymentDetails />;
       default:
         return <Dashboard guests={guests} />;
     }
@@ -176,17 +172,6 @@ export default function Admin() {
             >
               Guest Management
             </button>
-            <button
-              onClick={() => setActiveTab("payment-details")}
-              className={`w-full sm:w-auto py-2 px-4 text-sm sm:text-base rounded font-semibold 
-      ${
-        activeTab === "payment-details"
-          ? "bg-green-900 text-white"
-          : "bg-transparent border border-green-900 text-black"
-      }`}
-            >
-              Payment Details
-            </button>
           </div>
 
           {/* MOBILE - Switch tab */}
@@ -224,23 +209,6 @@ export default function Admin() {
                 }`}
               />
               Guests
-            </button>
-            <button
-              onClick={() => setActiveTab("payment-details")}
-              className={`text-sm flex flex-1 justify-center items-center flex-col py-3 px-2
-      ${
-        activeTab === "payment-details"
-          ? "bg-green-900 text-white"
-          : "bg-transparent  text-black"
-      }`}
-            >
-              <GiTakeMyMoney
-                size={30}
-                className={`${
-                  activeTab === "payment-details" ? "text-white" : "text-black"
-                }`}
-              />
-              Bank
             </button>
           </div>
 
