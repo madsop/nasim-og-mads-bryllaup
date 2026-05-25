@@ -25,12 +25,12 @@ const Footer = ({ language }) => {
         <span className="text-white">
           {text_3}{" "}
           <a
-            href="https://www.instagram.com/barometro.uk/profilecard/?igsh=c2YycXllazBkNTlq"
+            href="https://www.emanuelesgroi.com/portfolio/my-wedding-invitation-website"
             target="_blank"
             rel="noreferrer"
             className="text-gold font-semibold"
           >
-            @barometro.uk
+            Emanuele Sgroi
           </a>
         </span>{" "}
       </p>

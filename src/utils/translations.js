@@ -273,7 +273,7 @@ const translations = {
     footer: {
       text_1: "Website created with ",
       text_2: "by ",
-      text_3: "Photos by",
+      text_3: "Designmal av",
     },
     not_found: {
       message: "The page you are looking for does not exist.",
