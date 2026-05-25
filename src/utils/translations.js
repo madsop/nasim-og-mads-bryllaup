@@ -6,58 +6,58 @@
  */
 
 const translations = {
-  // ENGLISH <---------------------------------------------------------------------------------------
-  en: {
+  // NORWEGIAN <---------------------------------------------------------------------------------------
+  no: {
     couple: {
-      her: "Karolina",
-      him: "Emanuele",
-      footer_her: "Karolina",
-      footer_him: "Emanuele",
+      her: "Nasim",
+      him: "Mads",
+      footer_her: "Nasim",
+      footer_him: "Mads",
     },
     navbar: {
-      welcome: "Welcome",
-      save_the_date: "Save the Date",
-      schedule: "Wedding Timeline",
-      info: "Details",
-      rsvp: "RSVP",
-      registry: "Registry",
-      music: "Playlist",
+      welcome: "Velkommen",
+      save_the_date: "Hald av datoen",
+      schedule: "Tidslinje",
+      info: "Detaljar",
+      rsvp: "Svar",
+      registry: "Gåver?",
+      music: "Musikk",
     },
     welcome_section: {
-      small_text: "The wedding of...",
-      days: "Days",
-      day: "Day",
-      hours: "Hours",
-      hour: "Hours",
-      minutes: "Minutes",
-      minute: "Minute",
-      seconds: "Seconds",
-      second: "second",
-      button: "Save the Date",
+      small_text: "Vi giftar oss",
+      days: "Dager",
+      day: "Dag",
+      hours: "Timar",
+      hour: "Time",
+      minutes: "Minutt",
+      minute: "Minutt",
+      seconds: "Sekund",
+      second: "sekund",
+      button: "Hald av datoen",
     },
     saveTheDate_section: {
-      title: "SAVE",
-      title_cursive: "The Date",
-      date: "26th of July 2025",
-      place: "in Kolonia Łobudzice, Poland",
-      story_1: "We Met",
-      story_2: "We Got Engaged",
-      story_3_future: "We Will Marry",
-      story_3_past: "We Got Married",
+      title: "HALD",
+      title_cursive: "av datoen",
+      date: "8. mai 2027",
+      place: "i Oslo",
+      story_1: "Vi møttest",
+      story_2: "Vi forlova oss",
+      story_3_future: "Vi giftar oss",
+      story_3_past: "Vi gifta oss",
     },
     schedule_section: {
       title: {
-        main: "WEDDING",
-        sub: "Timeline",
+        main: "Tidslinje",
+        sub: "",
       },
       description:
         "The wedding celebration will start on Saturday, 26th of July, and end on Sunday, 27th of July 2025.",
       day_1: {
-        title: "Day 1",
+        title: "Laurdag 8. mai",
         events: {
           ceremony: {
-            time: "4:00 PM",
-            title: "Ceremony Begins",
+            time: "15:00",
+            title: "Seremonien startar",
           },
           dinner: {
             time: "6:00 PM",
@@ -117,22 +117,22 @@ const translations = {
         sub: "Details",
       },
       details: {
-        when_where: "When & Where",
+        when_where: "Kor og når?",
         dates: [
           {
             bold: true,
-            text: "Dates: ",
+            text: "Når: ",
           },
-          "Saturday, 26th of July & Sunday, 27th of July 2025.",
+          "Laurdag 8. mai 2027",
         ],
         location: [
           {
             bold: true,
             text: "Location: ",
           },
-          'Venue "Przy Patykach", Kolonia Łobudzice 18c, 97-425, Poland.',
+          'Lokalet Grefsen og Disen velhus, også kjent som "Svetter\'n", Kjelsåsveien 18, 0488 Oslo.',
         ],
-        button_loc: "SEE THE VENUE",
+        button_loc: "Sjå lokalet",
       },
       accommodations: {
         title: "Accommodations",
@@ -199,8 +199,8 @@ const translations = {
       },
     },
     rsvp_section: {
-      top_title: "RSVP",
-      title: { main: "Confirm your", sub: "Attendance" },
+      top_title: "Svar",
+      title: { main: "Stadfest at", sub: "du kjem" },
       description_1: [
         { bold: true, text: "Please RSVP by the 26th of May 2025!" },
         " Simply search for your name on the form and confirm your attendance.",
@@ -244,7 +244,7 @@ const translations = {
       },
     },
     registry_section: {
-      title: { main: "GIFT", sub: "Registry" },
+      title: { main: "Gåver", sub: "_" },
       description_1:
         "Your presence at our wedding is truly the greatest gift we could ask for!",
       description_2:
@@ -278,593 +278,6 @@ const translations = {
     not_found: {
       message: "The page you are looking for does not exist.",
       button: "Go Back",
-    },
-  },
-
-  // ITALIAN <---------------------------------------------------------------------------------------
-  it: {
-    couple: {
-      her: "Karolina",
-      him: "Emanuele",
-      footer_her: "Karolina",
-      footer_him: "Emanuele",
-    },
-    navbar: {
-      welcome: "Vetrina",
-      save_the_date: "Segna la Data",
-      schedule: "Timeline Matrimonio",
-      info: "Dettagli",
-      rsvp: "Conferma la Presenza",
-      registry: "Lista Nozze",
-      music: "Playlist",
-    },
-    welcome_section: {
-      small_text: "Il matrimonio di...",
-      days: "Giorni",
-      day: "Giorno",
-      hours: "Ore",
-      hour: "Ora",
-      minutes: "Minuti",
-      minute: "Minuto",
-      seconds: "Secondi",
-      second: "secondo",
-      button: "Segna la Data",
-    },
-    saveTheDate_section: {
-      title: "SEGNA",
-      title_cursive: "La Data",
-      date: "26 Luglio 2025",
-      place: "a Kolonia Łobudzice, Polonia",
-      story_1: "Ci Siamo Conosciuti",
-      story_2: "Ci Siamo Fidanzati",
-      story_3_future: "Ci Sposiamo",
-      story_3_past: "Ci Siamo Sposati",
-    },
-    schedule_section: {
-      title: {
-        main: "TIMELINE",
-        sub: "Matrimonio",
-      },
-      description:
-        "I festeggiamenti per il matrimonio inizieranno sabato 26 luglio e termineranno domenica 27 luglio 2025.",
-      day_1: {
-        title: "Giorno 1",
-        events: {
-          ceremony: {
-            time: "16:00",
-            title: "Inizio della Cerimonia",
-          },
-          dinner: {
-            time: "18:00",
-            title: "Cena Servita",
-          },
-          dance: {
-            time: "18:00",
-            title: "Primo Ballo",
-          },
-          photo: {
-            time: "20:00 - 23:00",
-            title: "Cabina Fotografica",
-          },
-          pig: {
-            time: "00:00",
-            title: "Piatto Speciale",
-          },
-          cake_cutting: {
-            time: "22:30",
-            title: "Taglio della Torta",
-          },
-          games: {
-            time: "00:30",
-            title: "Animazione con Giochi di Gruppo",
-          },
-          party: {
-            time: "Tutta la notte",
-            title: "Mangia, Bevi, Balla, Ripeti!",
-          },
-        },
-      },
-      day_2: {
-        title: "Giorno 2",
-        events: {
-          after: {
-            time: "15:00",
-            title: "Inizia L'After!",
-          },
-          vespa: {
-            time: "15:00 - 20:00",
-            title: "Vespa Bar",
-          },
-          party_continues: {
-            time: "Tutta la Giornata",
-            title: "Mangia, Bevi, Balla, Ripeti!",
-          },
-          end: {
-            time: "21:00",
-            title: "Finita La Commedia!",
-          },
-        },
-      },
-    },
-    info_section: {
-      title: {
-        main: "I",
-        sub: "Dettagli",
-      },
-      details: {
-        when_where: "Quando e Dove",
-        dates: [
-          { bold: true, text: "Date: " },
-          "Sabato 26 e Domenica 27 Luglio 2025",
-        ],
-        location: [
-          {
-            bold: true,
-            text: "Location: ",
-          },
-          'Agriturismo "Przy Patykach", Kolonia Łobudzice 18c, 97-425, Polonia',
-        ],
-        button_loc: "VISITA IL LOCALE",
-      },
-      accommodations: {
-        title: "Alloggi",
-        description_1: [
-          "Per i nostri ospiti internazionali, offriamo alloggio in hotel per ",
-          {
-            bold: true,
-            text: "Venerdì 25, Sabato 26 e Domenica 27 Luglio.",
-          },
-        ],
-        breakfast: [
-          { bold: true, text: "La colazione" },
-          " è inclusa con il soggiorno e verrà servita dalle ",
-          { bold: true, text: "9:00 alle 12:00" },
-          " ogni mattina.",
-        ],
-        checkout: [
-          { bold: true, text: "Hotel/Appartamenti Checkout:" },
-          " Il checkout é il Lunedí alle 11:00, perfavore fate colazione prima.",
-        ],
-      },
-      travel_transport: {
-        title: "Viaggio",
-        description_1: [
-          "Per i nostri ospiti internazionali, forniremo il trasporto dall'aeroporto alla location venerdì 25 luglio e dalla location all'aeroporto lunedì 28 luglio.",
-        ],
-        description_2: [
-          {
-            bold: true,
-            text: "Prima di prenotare il viaggio, vi preghiamo di contattarci e comunicarci l’orario e l’aeroporto che meglio si adattano al vostro programma. Organizzeremo quindi un trasporto di gruppo che soddisfi la maggioranza. Vi preghiamo di farlo entro il 26 maggio 2025.",
-          },
-        ],
-        description_3: [
-          "Gli aeroporti più vicini sono l'Aeroporto di Katowice (KTW), l'Aeroporto di Varsavia Modlin (WMI) e l'Aeroporto di Varsavia Chopin (WAW).",
-        ],
-        description_4: [
-          "Faremo del nostro meglio per accontentare tutti. Se non riuscite ad arrivare o partire nello stesso giorno e/o orario degli altri, vi aiuteremo a organizzare un altro modo per raggiungere e lasciare la location.",
-        ],
-        transport_details: {
-          arrival: {
-            title: "Venerdí 25 Luglio",
-            desc1: [
-              { bold: true, text: "Aereoporto di Varsavia (WAW):" },
-              " Le navette partono intorno le 19:30 - Karolina vi aspetterá agli arrivi.",
-            ],
-            desc2: [
-              { bold: true, text: "Aereoporto di Katowice:" },
-              " Le navette partono intorno le 17:00 - Emanuele vi aspetterá agli arrivi.",
-            ],
-          },
-          departure: {
-            title: "Lunedí 28 luglio",
-            desc1: [
-              { bold: true, text: "" },
-              " Le navette per entrambi gli aereoporti partono alle 12:00.",
-            ],
-          },
-        },
-      },
-      contact: {
-        title: "Contattaci",
-        // Email added on the front end
-        // numbers added on the front end
-      },
-    },
-    rsvp_section: {
-      top_title: "RSVP",
-      title: { main: "Conferma la tua", sub: "Presenza" },
-      description_1: [
-        {
-          bold: true,
-          text: "Vi preghiamo di confermare la vostra presenza entro il 26 maggio 2025!",
-        },
-        "  Basta cercare il vostro nome nell'apposito campo e confermare la partecipazione.",
-      ],
-      description_2:
-        "Vi preghiamo di lasciarci un messaggio se avete richieste speciali, restrizioni alimentari o qualsiasi altra cosa di cui vorreste parlarci. Vogliamo assicurarci che tutti siano a proprio agio e si divertano al massimo!",
-      label: "Cerca il tuo nome nella lista",
-      placeholder: "Digita il tuo nome",
-      no_found: "Nessun invitato trovato con questo nome",
-      multiple_guests_1: {
-        hi: "Ciao",
-        you: " Tu ",
-        and: " e ",
-        are_invited:
-          ", siete calorosamente invitati a partecipare al nostro giorno speciale. Festeggiare con tutti voi lo renderà indimenticabile!",
-      },
-      multiple_guests_2:
-        "Seleziona chi parteciperà al matrimonio. Speriamo possiate venire tutti.",
-      single_guest_1: {
-        hi: "Ciao ",
-        are_invited:
-          " Con grande piacere, ti invitiamo a partecipare al nostro giorno speciale. La tua presenza lo renderà indimenticabile!",
-      },
-      single_guest_2: "Parteciperai al matrimonio?",
-      answers: { yes: "Sì", no: "No", unknown: "Non lo so" },
-      note_placeholder: "Vuoi lasciare un messaggio?",
-      rsvp_success: {
-        thanks: "Grazie!",
-        submitted: " La tua conferma è stata inviata.",
-        change_by: [
-          "Ricorda che puoi cambiare la tua partecipazione entro il ",
-          { bold: true, text: "26 Maggio 2025" },
-          ".",
-        ],
-      },
-      error_enter_name: "Per favore inserisci la tua risposta prima di inviare",
-      error_submitting: "Errore nell'invio della conferma. Per favore riprova.",
-      button: {
-        submit: "Conferma",
-        loading: "Un Momento...",
-      },
-    },
-    registry_section: {
-      title: { main: "LISTA", sub: "Nozze" },
-      description_1:
-        "La vostra presenza al nostro matrimonio è davvero il regalo più grande che potremmo desiderare!",
-      description_2:
-        "Tuttavia, se desiderate onorarci con un regalo, vi saremmo immensamente grati per un contributo monetario che ci aiuti a costruire il nostro futuro insieme.",
-      description_3:
-        "In alternativa a fiori, liquori e altri regali materiali, saremmo felici di ricevere gratta e vinci o biglietti della lotteria come modo divertente ed emozionante per celebrare il nostro nuovo inizio.",
-      description_4:
-        "Chiediamo gentilmente ai nostri ospiti internazionali di considerare l’opzione di inviare il regalo tramite bonifico bancario. Per accedere ai nostri dati bancari, cliccate sul pulsante qui sotto e inserite la password indicata nell’invito. Come sempre, non esitate a contattarci direttamente se avete domande!",
-      button: "Accedi Dettagli Bancari",
-      thanks: "GRAZIE!",
-      error_from_api:
-        "Si è verificato un problema. Riprova più tardi o contattaci",
-      error_incorrect_password: "Password errata",
-      error_insert_password: "Inserisci la password",
-      account_holder: "Beneficiario: ",
-      iban: "IBAN: ",
-      bank_name: "Intestato a: ",
-      bic: "BIC / SWIFT: ",
-      sort_code: "Codice Sort: ",
-      account_number: "Numero di conto: ",
-      eur: "Euro",
-      gbp: "Sterlina",
-      pln: "Zloty",
-      toast_copied: "Copiato negli appunti",
-      toast_error: "Non è stato possibile copiare",
-      dialog_title: {
-        before: "Inserisci la password",
-        after: "La password è corretta",
-      },
-      placeholder: "Inserisci la password",
-      submit_button: { submit: "Invia", loading: "Verifica in corso..." },
-      copy_all: "Copia tutto",
-    },
-    music_section: {
-      title: { main: "LA", sub: "Playlist" },
-      description:
-        "Aggiungi le tue canzoni preferite alla nostra playlist e aiutaci a creare la colonna sonora perfetta per il nostro matrimonio!",
-      placeholder: "Nome della canzone",
-      small_note:
-        "* Alcune canzoni non possono essere riprodotte qui, ma puoi comunque aggiungerle alla playlist.",
-      toast_success: {
-        title: "Canzone aggiunta alla playlist",
-        description: "Vuoi aggiungerne un'altra?",
-      },
-      toast_error: {
-        title: "Impossibile aggiungere la canzone alla playlist!",
-        description:
-          "Siamo spiacenti, ma qualcosa è andato storto da parte nostra. Per favore, riprova più tardi.",
-      },
-    },
-    footer: {
-      text_1: "Sito creato con ",
-      text_2: "da ",
-      text_3: "Fotografie da",
-    },
-    not_found: {
-      message: "La pagina che stai cercando non esiste.",
-      button: "Torna Indietro",
-    },
-  },
-
-  // POLISH <---------------------------------------------------------------------------------------
-  pl: {
-    couple: {
-      her: "Karoliny",
-      him: "Emanuela",
-      footer_her: "Karoline",
-      footer_him: "Emanuela",
-    },
-    navbar: {
-      welcome: "Witamy",
-      save_the_date: "Zarezerwuj Datę",
-      schedule: "Harmonogram Przyjęcia",
-      info: "Szczegóły",
-      rsvp: "RSVP",
-      registry: "Lista Prezentów",
-      music: "Playlista",
-    },
-    welcome_section: {
-      small_text: "Ślub...",
-      days: "dni",
-      day: "dzień",
-      hours: "godziny",
-      hour: "godzina",
-      minutes: "minuty",
-      minute: "Minuta",
-      seconds: "sekundy",
-      second: "sekunda",
-      button: "Zarezerwuj Datę",
-    },
-    saveTheDate_section: {
-      title: "ZAREZERWUJ", //DATĘ
-      title_cursive: "Datę",
-      date: "26 lipca 2025 roku",
-      place: 'na sali "Przy Patykach" w Kolonii Łobudzice, Zelów',
-      story_1: "Spotkaliśmy Się",
-      story_2: "Zaręczyliśmy Się",
-      story_3_future: "Weźmiemy Ślub",
-      story_3_past: "Pobraliśmy Się",
-    },
-    schedule_section: {
-      title: {
-        main: "HARMONOGRAM",
-        sub: "Przyjęcia",
-      },
-      description:
-        "Ślub oraz wesele odbędą się 26 lipca 2025 roku. Następnego dnia serdecznie zapraszamy na poprawiny!",
-      day_1: {
-        title: "Dzień 1",
-        events: {
-          ceremony: {
-            time: "16:00",
-            title: "Ceremonia Ślubu",
-          },
-          dinner: {
-            time: "18:00",
-            title: "Uroczysty Obiad",
-          },
-          dance: {
-            time: "18:00",
-            title: "Pierwszy Taniec",
-          },
-          photo: {
-            time: "20:00 - 23:00",
-            title: "Fotobudka",
-          },
-          pig: {
-            time: "00:00",
-            title: "Danie Specjalne",
-          },
-          cake_cutting: {
-            time: "22:30",
-            title: "Tort",
-          },
-          games: {
-            time: "00:30",
-            title: "Oczepiny",
-          },
-          party: {
-            time: "Do Białego Rana",
-            title: "Jedzenie, Picie, i Zabawa!",
-          },
-        },
-      },
-      day_2: {
-        title: "Dzień 2",
-        events: {
-          after: {
-            time: "15:00",
-            title: "Rozpoczęcie Poprawin",
-          },
-          vespa: {
-            time: "15:00 - 20:00",
-            title: "Bar Vespa",
-          },
-          party_continues: {
-            time: "Cały Dzień",
-            title: "Jedzenie, Picie, i Zabawa!",
-          },
-          end: {
-            time: "21:00",
-            title: "Koniec",
-          },
-        },
-      },
-    },
-    info_section: {
-      title: {
-        main: "WIĘCEJ",
-        sub: "Szczegółów",
-      },
-      details: {
-        when_where: "Kiedy i Gdzie",
-        dates: [
-          {
-            bold: true,
-            text: "Daty: ",
-          },
-          "Sobota, 26 Lipca & Niedziela, 27 Lipca 2025 roku",
-        ],
-        location: [
-          {
-            bold: true,
-            text: "Lokalizacja: ",
-          },
-          'Sala "Przy Patykach", Kolonia Łobudzice 18c, 97-425',
-        ],
-        button_loc: "ZOBACZ LOKALIZACJĘ",
-      },
-      accommodations: {
-        title: "Zakwaterowanie",
-        description_1: [
-          "Dla naszych zagranicznych gości oferujemy zakwaterowanie w hotelu przy sali w dniach: ",
-          {
-            bold: true,
-            text: "Piątek, 25 lipca, Sobota, 26 lipca i Niedziela, 27 lipca.",
-          },
-          "",
-        ],
-        breakfast: [
-          { bold: true, text: "Śniadanie" },
-          " jest wliczone w cenę pobytu i będzie serwowane od ",
-          { bold: true, text: "9:00 do 12:00" },
-          " każdego ranka.",
-        ],
-        checkout: [{ bold: true, text: "" }, ""],
-      },
-      travel_transport: {
-        title: "Transport",
-        description_1: [
-          "Naszym międzynarodowym gościom zapewniamy transport z lotniska na salę w piątek 25 lipca oraz z sali na lotnisko w poniedziałek 28 lipca.",
-        ],
-        description_2: [
-          {
-            bold: true,
-            text: "",
-          },
-        ],
-        description_3: [""],
-        description_4: [
-          "Dołożymy wszelkich starań, aby zadowolić każdego. Jeśli nie możesz wylądować/wylecieć tego samego dnia/godziny co wszyscy inni, pomożemy Ci zorganizować inny sposób dotarcia na miejsce i z powrotem.",
-        ],
-        transport_details: {
-          arrival: {
-            title: "",
-            desc1: [{ bold: true, text: "" }, ""],
-            desc2: [{ bold: true, text: "" }, ""],
-          },
-          departure: {
-            title: "",
-            desc1: [{ bold: true, text: "" }, ""],
-          },
-        },
-      },
-      contact: {
-        title: "Skontaktuj się z Nami",
-        // Email added on the front end
-        // numbers added on the front end
-      },
-    },
-    rsvp_section: {
-      top_title: "RSVP",
-      title: { main: "Potwierdź Swoją", sub: "Obecność" },
-      description_1: [
-        {
-          bold: true,
-          text: "Prosimy o potwierdzenie obecności do 26 maja 2025 roku!",
-        },
-        " Wpisz swoje imię i nazwisko w formularzu obok i potwierdź swoją obecność.",
-      ],
-      description_2:
-        "Zostaw nam wiadomość, jeśli masz jakieś specjalne życzenia, ograniczenia dietetyczne lub jeśli jest coś jeszcze, co chciałbyś z Nami omówić. Zależy nam na tym, aby każdy czuł się komfortowo i świetnie się bawił!",
-      label: "Wyszukaj swoje imię na liście gości",
-      placeholder: "Wyszukaj swoje imię",
-      no_found: "Nie znaleziono osoby o tym imieniu i nazwisku na liście gości",
-      multiple_guests_1: {
-        hi: "Cześć ",
-        you: "! Ty, ",
-        and: " i ",
-        are_invited:
-          ", jesteście serdecznie zaproszeni na nasz wyjątkowy dzień. Nie możemy się doczekać by świętować razem z Wami!",
-      },
-      multiple_guests_2:
-        "Wybierz, kto weźmie udział w weselu. Mamy nadzieję, że wszyscy będziecie mogli przyjść.",
-      single_guest_1: {
-        hi: "Cześć",
-        are_invited:
-          " Cieszymy się, że jesteś na naszej liście gości. Nie możemy się doczekać by świętować razem z Tobą!",
-      },
-      single_guest_2: "Czy weźmiesz udział w weselu?",
-      answers: { yes: "Tak", no: "Nie", unknown: "Jeszcze nie wiem" },
-      note_placeholder: "Chcesz zostawić wiadomość?",
-      rsvp_success: {
-        thanks: "Dziękujemy!",
-        submitted: " Twoje potwierdzenie zostało przesłane.",
-        change_by: [
-          "Pamiętaj, że możesz zmienić swoją obecność do ",
-          { bold: true, text: "26 maja 2025 roku" },
-          ".",
-        ],
-      },
-      error_enter_name: "Proszę podać odpowiedź przed wysłaniem",
-      error_submitting: "Błąd podczas wysyłania RSVP. Spróbuj ponownie.",
-      button: {
-        submit: "Potwierdź Obecność",
-        loading: "Ładowanie...",
-      },
-    },
-    registry_section: {
-      title: { main: "LISTA", sub: "Prezentów" },
-      description_1:
-        "Wasza obecność w tym wyjątkowym dniu będzie dla Nas największym prezentem!",
-      description_2:
-        "Jeśli jednak chcielibyście obdarować nas w tym najważniejszym dla nas dniu, będziemy wdzięczni o wsparcie finansowe na budowę naszej wspólnej przyszłości.",
-      description_3:
-        "Zamiast kwiatów, alkoholu i innych prezentów fizycznych, serdecznie prosimy o zdrapki lub losy na loterię!",
-      description_4:
-        "Uprzejmie prosimy naszych gości z zagranicy o rozważenie przesłania prezentu przelewem bankowym. Aby uzyskać dostęp do danych bankowych, kliknij poniższy przycisk i wprowadź hasło znajdujące się w zaproszeniu. Jak zawsze, jeśli masz jakiekolwiek pytania, skontaktuj się z nami bezpośrednio!",
-      button: "Dostęp do danych przelewu",
-      thanks: "DZIĘKUJEMY!",
-      error_from_api:
-        "Wystąpił problem. Spróbuj ponownie później lub skontaktuj się z nami",
-      error_incorrect_password: "Nieprawidłowe hasło",
-      error_insert_password: "Wprowadź hasło",
-      account_holder: "Odbiorca: ",
-      iban: "IBAN: ",
-      bank_name: "Adres: ",
-      bic: "BIC / SWIFT: ",
-      sort_code: "Sort code: ",
-      account_number: "Numer konta: ",
-      eur: "Euro",
-      gbp: "Funt",
-      pln: "Złoty",
-      toast_copied: "Skopiowano do schowka",
-      toast_error: "Nie udało się skopiować",
-      dialog_title: { before: "Wprowadź hasło", after: "Hasło jest poprawne" },
-      placeholder: "Wprowadź hasło",
-      submit_button: { submit: "Wyślij", loading: "Sprawdzanie..." },
-      copy_all: "Kopiuj wszystko",
-    },
-    music_section: {
-      title: { main: "NASZA", sub: "Playlista" },
-      description:
-        "Dodaj swoje ulubione piosenki do naszej playlisty i pomóż nam stworzyć idealną ścieżkę dźwiękową na nasze wesele!",
-      placeholder: "Wpisz nazwę utworu",
-      small_note:
-        "* Niektóre piosenki nie mogą być odtworzone, ale nadal możesz je dodać do naszej playlisty.",
-      toast_success: {
-        title: "Piosenka dodana do playlisty",
-        description: "Czy chcesz dodać kolejną piosenkę?",
-      },
-      toast_error: {
-        title: "Nie udało się dodać piosenki",
-        description:
-          "Przepraszamy, coś poszło nie tak. Spróbuj ponownie później.",
-      },
-    },
-    footer: {
-      text_1: "Strona stworzona z ",
-      text_2: "przez ",
-      text_3: "Fotografie autorstwa",
-    },
-    not_found: {
-      message: "Strona, której szukasz, nie istnieje.",
-      button: "Wróć",
     },
   },
 };

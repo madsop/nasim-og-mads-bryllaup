@@ -14,21 +14,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Metadata configuration (nice for social sharing)
 export const metadata = {
-  title: "Karolina & Emanuele",
+  title: "Nasim & Mads",
   description:
-    "You are invited to our Wedding | Sei invitato al nostro Matrimonio |  Jesteś zaproszony na nasz Ślub",
+    "Du er invitert til bryllaupet vårt",
   openGraph: {
-    title: "Karolina & Emanuele",
+    title: "Nasim & Mads",
     description:
-      "You are invited to our Wedding | Sei invitato al nostro Matrimonio |  Jesteś zaproszony na nasz Ślub",
+      "Du er invitert til bryllaupet vårt",
     url: "https://emanuelekarolina.vercel.app/",
-    siteName: "Karolina & Emanuele",
+    siteName: "Nasim & Mads",
     images: [
       {
         url: "https://emanuelekarolina.vercel.app/images/og-image.jpg",
         width: 1200,
         height: 600,
-        alt: "Karolina & Emanuele Wedding Website",
+        alt: "Nasim & Mads giftar seg",
       },
     ],
     type: "website",

@@ -30,9 +30,7 @@ const LanguageDropdown = ({ detectedLanguage, setLanguage }) => {
 
   // Group drop down elements for convenience
   const languages = [
-    { code: "it", label: "Italiano", flag: images.italian },
-    { code: "pl", label: "Polski", flag: images.polish },
-    { code: "en", label: "English", flag: images.english },
+    { code: "no", label: "Norsk", flag: images.norwegian },
   ];
 
   const [selectedLanguage, setSelectedLanguage] = useState(null); // Initially null

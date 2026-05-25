@@ -11,19 +11,19 @@
 import { useState, useEffect } from "react";
 
 const LanguageDetector = () => {
-  const [language, setLanguage] = useState("en"); // Default language is English
+  const [language, setLanguage] = useState("no"); // Default language is English
 
   useEffect(() => {
     // Detect browser language
     const browserLanguage = navigator.language || navigator.userLanguage;
 
     // We're only supporting a few languages, so let's normalize it
-    const supportedLanguages = ["en", "it", "pl"];
+    const supportedLanguages = ["no"];
     const detectedLanguage = supportedLanguages.includes(
       browserLanguage.slice(0, 2)
     )
       ? browserLanguage.slice(0, 2)
-      : "en"; // Default to English if unsupported
+      : "no"; // Default to English if unsupported
 
     setLanguage(detectedLanguage);
   }, []);

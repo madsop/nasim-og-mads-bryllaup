@@ -26,9 +26,8 @@ const InfoSection = ({ language }) => {
 
   //Extract couple contacts from env
   const coupleEmail = process.env.NEXT_PUBLIC_EMAIL;
-  const herNumber = process.env.NEXT_PUBLIC_K_NUM;
-  const hisNumberUk = process.env.NEXT_PUBLIC_E_NUM_UK;
-  const hisNumberIt = process.env.NEXT_PUBLIC_E_NUM_IT;
+  const herNumber = process.env.NEXT_PUBLIC_N_NUM;
+  const hisNumber = process.env.NEXT_PUBLIC_M_NUM;
 
   return (
     <section
@@ -97,7 +96,7 @@ const InfoSection = ({ language }) => {
           </p>
 
           <Link
-            href={`https://przypatykach.pl/`}
+            href={`http://af767fd0.lag247.no`}
             target="_blank"
             className="flex justify-center items-center gap-1 border border-gold rounded-lg px-2 py-1 mt-2 font-light text-sm"
           >
@@ -237,31 +236,20 @@ const InfoSection = ({ language }) => {
             </a>
           </p>
           <p translate="no" className="max-sm:flex max-sm:flex-col">
-            <span className="font-bold">Karolina: </span>{" "}
+            <span className="font-bold">Nasim: </span>{" "}
             <a href={`tel:${herNumber.replace(/\s+/g, "")}`} target="_blank">
               {herNumber}
             </a>
           </p>
           <p translate="no" className="max-sm:flex max-sm:flex-col">
-            <span className="font-bold">Emanuele: </span>{" "}
+            <span className="font-bold">Mads: </span>{" "}
             <span>
               <a
-                href={`tel:${hisNumberUk.replace(/\s+/g, "")}`}
+                href={`tel:${hisNumber.replace(/\s+/g, "")}`}
                 target="_blank"
               >
-                {hisNumberUk}
-              </a>{" "}
-              {"(UK)"}
-              <span className="max-sm:hidden">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
-            </span>
-            <span>
-              <a
-                href={`tel:${hisNumberIt.replace(/\s+/g, "")}`}
-                target="_blank"
-              >
-                {hisNumberIt}
-              </a>{" "}
-              {"(IT)"}
+                {hisNumber}
+              </a>
             </span>
           </p>
         </div>

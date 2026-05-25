@@ -6,7 +6,7 @@
  */
 
 export const getCountdown = () => {
-  const weddingDate = new Date("2025-07-26T16:00:00"); // 26 July 2025, 4:00 PM
+  const weddingDate = new Date("2027-05-08T15:00:00"); // 8. mai 2027, 15.00
   //const weddingDate = new Date("2025-07-15T20:53:00"); // Test
 
   const now = new Date(); // Get the current date and time
@@ -20,7 +20,7 @@ export const getCountdown = () => {
       hours: 0,
       minutes: 0,
       seconds: 0,
-      message: "We got Married",
+      message: "Vi gifta oss",
     };
   }
 

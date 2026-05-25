@@ -22,7 +22,7 @@ import {
 import LanguageDetector from "@/components/LanguageDetector/LanguageDetector";
 
 export default function Home() {
-  const [language, setLanguage] = useState("en"); // Set default Language
+  const [language, setLanguage] = useState("no"); // Set default Language
 
   // Scroll to top on page load
   useEffect(() => {
@@ -32,12 +32,12 @@ export default function Home() {
   // Detect the browser's language and set it if supported, else default to English
   useEffect(() => {
     const browserLanguage = navigator.language || navigator.userLanguage;
-    const supportedLanguages = ["en", "it", "pl"]; // English, Italian and Polish are the current languages available for this website
+    const supportedLanguages = ["no"];
     const detectedLanguage = supportedLanguages.includes(
       browserLanguage.slice(0, 2)
     )
       ? browserLanguage.slice(0, 2)
-      : "en";
+      : "no";
 
     setLanguage(detectedLanguage);
   }, []);

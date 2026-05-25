@@ -11,9 +11,7 @@ import welcome_3 from "../../public/images/welcome_3.jpg";
 import curved_it from "../../public/images/curved_it.png";
 import curved_en from "../../public/images/curved_en.png";
 import curved_pl from "../../public/images/curved_pl.png";
-import polish from "../../public/icons/polish.png";
-import italian from "../../public/icons/italian.png";
-import english from "../../public/icons/english.png";
+import norwegian from "../../public/icons/norwegian.png";
 import dove from "../../public/icons/dove.png";
 import g_1_1 from "../../public/images/g_1_1.jpg";
 import g_1_2 from "../../public/images/g_1_2.jpg";
@@ -53,9 +51,7 @@ const images = {
   curved_it,
   curved_en,
   curved_pl,
-  polish,
-  italian,
-  english,
+  norwegian,
   dove,
   g_1_1,
   g_1_2,
