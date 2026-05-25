@@ -40,6 +40,8 @@ const translations = {
       title_cursive: "av datoen",
       date: "8. mai 2027",
       place: "i Oslo",
+      place_ceremony: "Seremonien er i Klimahuset i Botanisk hage",
+      place_party: "Festen er i Grefsen og Disen velhus",
       story_1: "Vi møttest",
       story_2: "Vi forlova oss",
       story_3_future: "Vi giftar oss",
@@ -51,7 +53,7 @@ const translations = {
         sub: "",
       },
       description:
-        "The wedding celebration will start on Saturday, 26th of July, and end on Sunday, 27th of July 2025.",
+        "Fleire tider og meir detaljar kjem etter som dei blir klare.",
       day_1: {
         title: "Laurdag 8. mai",
         events: {
@@ -128,7 +130,7 @@ const translations = {
         location: [
           {
             bold: true,
-            text: "Location: ",
+            text: "Kor: ",
           },
           'Lokalet Grefsen og Disen velhus, også kjent som "Svetter\'n", Kjelsåsveien 18, 0488 Oslo.',
         ],
@@ -193,7 +195,7 @@ const translations = {
         },
       },
       contact: {
-        title: "Contact Us",
+        title: "Kontakt oss",
         // Email added on the front end
         // numbers added on the front end
       },

@@ -226,7 +226,7 @@ const InfoSection = ({ language }) => {
             {contact.title}
           </h5>
           <p translate="no" className="max-sm:flex max-sm:flex-col">
-            <span className="font-bold">Email: </span>{" "}
+            <span className="font-bold">E-post: </span>{" "}
             <a
               href={`mailto:${coupleEmail}`}
               target="_blank"

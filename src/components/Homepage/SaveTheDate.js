@@ -43,6 +43,8 @@ const SaveTheDate = ({ language }) => {
     title_cursive,
     date,
     place,
+    place_ceremony,
+    place_party,
     story_1,
     story_2,
     story_3_future,
@@ -58,12 +60,11 @@ const SaveTheDate = ({ language }) => {
 
   // Group story elements for convenience
   const story = [
-    { year: 2023, text: story_1, img: "/icons/met.svg" },
-    { year: 2026, text: story_2, img: "/icons/engaged.svg" },
+    { year: 2023, text: story_1},
+    { year: 2026, text: story_2},
     {
       year: 2027,
       text: countdown.message ? story_3_past : story_3_future,
-      img: "/icons/marry.svg",
     },
   ];
 
@@ -127,6 +128,24 @@ const SaveTheDate = ({ language }) => {
         >
           {place}
         </motion.p>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            variants={secondaryVariants}
+            viewport={{ once: true, amount: 0.2 }}
+            translate="no"
+        >
+          {place_ceremony}
+        </motion.p>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            variants={secondaryVariants}
+            viewport={{ once: true, amount: 0.2 }}
+            translate="no"
+        >
+          {place_party}
+        </motion.p>
       </div>
 
       <div className="w-full flex flex-col sm:flex-row  justify-center items-center gap-8 md:gap-20 lg:gap-24 mt-12 sm:mt-16 lg:mt-20 px-4 z-10">
@@ -145,19 +164,6 @@ const SaveTheDate = ({ language }) => {
             >
               {item.year}
             </motion.h4>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              variants={secondaryVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className="w-[140px] sm:w-[160px] h-[140px] sm:h-[160px] flex justify-center items-center mb-3"
-            >
-              <img
-                src={item.img}
-                alt={item.text}
-                className="w-full h-auto z-10"
-              />
-            </motion.div>
             <motion.h4
               initial="hidden"
               whileInView="visible"
