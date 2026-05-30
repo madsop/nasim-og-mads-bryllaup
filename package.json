@@ -33,7 +33,7 @@
     "react-parallax-tilt": "^1.7.239",
     "react-scroll": "^1.9.0",
     "react-use": "^17.5.1",
-    "sass": "^1.78.0",
+    "sass": "^1.100.0",
     "sharp": "^0.34.5",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
