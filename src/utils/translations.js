@@ -223,12 +223,11 @@ const translations = {
     registry_section: {
       title: { main: "", sub: "Gåver" },
       description_1:
-        "Your presence at our wedding is truly the greatest gift we could ask for!",
+        "Det vi ønskjer oss mest er at du blir med og feirar oss.",
       description_2:
-        "However, if you wish to honor us with a gift, we would greatly appreciate a monetary contribution to help us build our future together.",
+        "Vi har alt vi treng, men vi liker jo å reise, så eit bidrag til reisekontoen vil vi sette pris på.",
       description_3:
-        "In lieu of flowers, alcohol, and other physical gifts, we would be delighted to receive scratch cards or lottery tickets as a fun and exciting way to celebrate our new beginning.",
-      description_4: "",
+        "",
     },
     music_section: {
       title: { main: "OUR", sub: "Playlist" },

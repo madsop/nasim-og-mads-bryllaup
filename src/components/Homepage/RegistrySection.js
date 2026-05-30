@@ -143,17 +143,6 @@ const RegistrySection = ({ language }) => {
         >
           {description_3}
         </motion.p>
-        {dashedLine}
-        <motion.p
-          initial="hidden"
-          whileInView="visible"
-          variants={secondaryVariants}
-          viewport={{ once: true, amount: 0.2 }}
-          translate="no"
-          className=" text-center my-4"
-        >
-          {description_4}
-        </motion.p>
 
         <Image
           src={images.divider}
