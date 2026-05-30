@@ -142,7 +142,6 @@ SPOTIFY_PLAYLIST_ID=your_spotify_playlist_id
 SPOTIFY_REDIRECT_URI=e.g. http://localhost:3000/api/auth/callback
 SPOTIFY_REFRESH_TOKEN=your_spotify_refresh_token
 # Other
-GUEST_ACCESS_PASSWORD=e.g. TempPassword123
 NEXT_PUBLIC_ADMIN_ACCESS_PASSWORD=e.g. AdminPassword123
 NEXT_PUBLIC_ALLOWED_ADMIN_EMAIL=example@youradminemail.com
 ```
