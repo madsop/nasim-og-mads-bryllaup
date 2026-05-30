@@ -17,8 +17,8 @@ const Footer = ({ language }) => {
       <p translate="no" className="text-xs md:text-base tracking-wide">
         {text_1}
         <IoIosHeart className="inline text-red-500 mx-1 h-5 w-5" /> {text_2}
-        <span className="text-gold font-semibold">{footer_her}</span> &amp;{" "}
-        <span className="text-gold font-semibold">{footer_him}</span>{" "}
+        <span className="text-gold font-semibold">{footer_him}</span> &amp;{" "}
+        <span className="text-gold font-semibold">{footer_her}</span>{" "}
       </p>
       <p translate="no" className="text-xs md:text-base tracking-wide">
         <span className="text-white max-sm:hidden">-</span>{" "}

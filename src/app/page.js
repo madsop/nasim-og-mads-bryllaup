@@ -77,7 +77,7 @@ export default function Home() {
         <RegistrySection language={language} />
 
         {/* Song Requests Section */}
-        <MusicSection language={language} />
+        {/*<MusicSection language={language} />*/}
       </div>
     </main>
   );

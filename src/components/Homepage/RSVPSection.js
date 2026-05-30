@@ -59,6 +59,8 @@ const RSVPSection = ({ language }) => {
   const [pageHeight, setPageHeight] = useState(0); // State to store the height of the page
   const { width, height } = useWindowSize(); // Retrieve width and height from useWindowSize
 
+  const schemaURL = process.env.NEXT_PUBLIC_RSVP;
+
   // Variants for framer motion animation
   const containerVariants = {
     hidden: { opacity: 1 },
@@ -384,8 +386,6 @@ const RSVPSection = ({ language }) => {
 
       {/* main section */}
       <div className="w-full py-12 px-4 sm:px-6 xl:px-12 bg-cream flex flex-col lg:flex-row justify-center gap-4 lg:gap-12 xl:gap-44">
-        {/* left part*/}
-        <div className="w-full lg:w-1/2 flex justify-start lg:justify-end">
           <div className="flex flex-col items-start relative w-full max-w-full lg:max-w-lg text-left gap-0 lg:gap-6">
             <div className="flex flex-col items-start max-sm:w-full max-sm:items-center">
               <h3 translate="no" className=" font-bold z-20 ml-6 sm:ml-16">
@@ -398,6 +398,15 @@ const RSVPSection = ({ language }) => {
                 {title.sub}
               </h3>
             </div>
+            <p translate="no" className="text-left">
+              <a
+                  href={schemaURL}
+                  target="_blank"
+                  className="underline underline-offset-4 decoration-1"
+              >
+                Fyll ut skjemaet
+              </a>
+            </p>
             <p translate="no" className="text-left">
               {description_1.map((item, index) =>
                 typeof item === "string" ? (
@@ -413,249 +422,6 @@ const RSVPSection = ({ language }) => {
               {description_2}
             </p>
           </div>
-        </div>
-        {/* right part*/}
-        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
-          <div className="w-full lg:max-w-[500px] flex flex-col justify-start items-start">
-            <p translate="no">- {label}</p>
-            {/* Search Input */}
-            <input
-              type="text"
-              placeholder={placeholder}
-              className="border py-2 px-3 rounded w-full max-lg:max-w-[500px] mb-4 focus:outline-none"
-              value={searchTerm}
-              onChange={handleSearch}
-              autoComplete="on"
-              translate="no"
-            />
-
-            {/* Display search results */}
-            {searchTerm && filteredGuests.length > 0 && (
-              <ul className="border p-2 w-full max-lg:max-w-[500px] rounded">
-                {filteredGuests.map((guest) => (
-                  <li
-                    key={guest.id}
-                    translate="no"
-                    className="cursor-pointer hover:bg-gray-200 p-2 flex justify-start items-center gap-4"
-                    onClick={() => handleGuestSelect(guest)}
-                  >
-                    {guest.name}
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {/* If no guests are found */}
-            {searchTerm && filteredGuests.length === 0 && (
-              <p translate="no">{no_found}</p>
-            )}
-
-            {/* RSVP Form: Only visible after a guest is selected */}
-            {selectedGuest && (
-              <div className="mt-4 w-full flex flex-col justify-start items-start">
-                {selectedGuest.relationshipIds.length === 0 ? (
-                  <p translate="no" className="text-xl mb-6 text-left">
-                    {single_guest_1.hi}
-                    <span className="font-bold">{selectedGuest.name}!</span>
-                    {single_guest_1.are_invited}
-                  </p>
-                ) : (
-                  <p translate="no" className="text-xl mb-6 text-left">
-                    {multiple_guests_1.hi}{" "}
-                    <span className="font-bold">{selectedGuest.name}!</span>
-                    {multiple_guests_1.you}
-                    {formatNames(
-                      guestsList
-                        .filter((g) =>
-                          selectedGuest.relationshipIds.includes(g.id)
-                        )
-                        .map((g) => g.name)
-                    )}
-                    {multiple_guests_1.are_invited}
-                  </p>
-                )}
-
-                {/* Main Guest */}
-                <div className=" flex flex-col items-start">
-                  {selectedGuest.relationshipIds.length === 0 ? (
-                    <p
-                      translate="no"
-                      className="font-semibold text-lg text-left"
-                    >
-                      {single_guest_2}
-                    </p>
-                  ) : (
-                    <p
-                      translate="no"
-                      className="font-semibold text-lg text-left"
-                    >
-                      {multiple_guests_2}
-                    </p>
-                  )}
-
-                  <div className="w-full flex justify-between  flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-4  max-sm:mb-6 pr-6">
-                    <h2
-                      translate="no"
-                      className="text-xl font-bold text-left sm:mt-3"
-                    >
-                      {selectedGuest.name}
-                    </h2>
-                    <Select
-                      // value={guestsToRsvp[0]?.attending}
-                      onValueChange={(value) => {
-                        // Update the attending value for the main guest in guestsToRsvp
-                        setGuestsToRsvp((prevGuests) => {
-                          const updatedGuests = [...prevGuests];
-                          updatedGuests[0] = {
-                            ...updatedGuests[0],
-                            attending: value,
-                          };
-                          return updatedGuests;
-                        });
-                      }}
-                    >
-                      <SelectTrigger className="w-[215px] px-4 rounded-md bg-neutral-100">
-                        <SelectValue
-                          className="p-0"
-                          translate="no"
-                          placeholder={
-                            guestsToRsvp[0]?.attending === "Unknown" ||
-                            guestsToRsvp[0]?.attending === "unknown"
-                              ? answers.unknown
-                              : guestsToRsvp[0]?.attending === "Yes"
-                              ? answers.yes
-                              : answers.no
-                          }
-                        />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="Yes" translate="no">
-                          {answers.yes}
-                        </SelectItem>
-                        <SelectItem value="No" translate="no">
-                          {answers.no}
-                        </SelectItem>
-                        <SelectItem value="Unknown" translate="no">
-                          {answers.unknown}
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  {/* Relatives or Group Members */}
-                  {guestsToRsvp.slice(1).map((guest) => (
-                    <div
-                      key={guest.id}
-                      className="w-full flex justify-between  flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-4  max-sm:mb-6 pr-6"
-                    >
-                      <h2
-                        translate="no"
-                        className="text-xl font-bold text-left sm:mt-3"
-                      >
-                        {guest.name}
-                      </h2>
-                      <Select
-                        // value={guest.attending}
-                        onValueChange={(value) => {
-                          // Update the attending value for this guest
-                          setGuestsToRsvp((prevGuests) =>
-                            prevGuests.map((g) =>
-                              g.id === guest.id ? { ...g, attending: value } : g
-                            )
-                          );
-                        }}
-                      >
-                        <SelectTrigger
-                          value={
-                            guest.attending === "Unknown" ||
-                            guest.attending === "unknown"
-                              ? answers.unknown
-                              : guest.attending === "Yes"
-                              ? answers.yes
-                              : answers.no
-                          }
-                          className="w-[215px] px-4 rounded-md bg-neutral-100"
-                        >
-                          <SelectValue
-                            className="p-0"
-                            translate="no"
-                            placeholder={
-                              guest.attending === "Unknown" ||
-                              guest.attending === "unknown"
-                                ? answers.unknown
-                                : guest.attending === "Yes"
-                                ? answers.yes
-                                : answers.no
-                            }
-                          />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="Yes" translate="no">
-                            {answers.yes}
-                          </SelectItem>
-                          <SelectItem value="No" translate="no">
-                            {answers.no}
-                          </SelectItem>
-                          <SelectItem value="Unknown" translate="no">
-                            {answers.unknown}
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Textarea for special requests */}
-                <textarea
-                  placeholder={note_placeholder}
-                  className="border p-2 rounded w-full max-lg:max-w-[500px] sm:my-4 focus:outline-none"
-                  value={specialRequests}
-                  translate="no"
-                  onChange={(e) => setSpecialRequests(e.target.value)}
-                />
-
-                {/* Submit Button */}
-                <button
-                  onClick={handleSubmit}
-                  disabled={isLoading}
-                  translate="no"
-                  className="btn2 max-sm:mt-4"
-                >
-                  {isLoading ? button.loading : button.submit}
-                </button>
-                {/* Error Message */}
-                {errorMessage && (
-                  <p
-                    translate="no"
-                    className="text-red-500 mt-4 text-left text-lg"
-                  >
-                    {errorMessage}
-                  </p>
-                )}
-
-                {/* Thank You Message */}
-                {submitted && errorMessage.length === 0 && (
-                  <div className="mt-4 w-full flex flex-col justify-start items-start">
-                    <p translate="no" className="text-left">
-                      <span className="font-bold">{rsvp_success.thanks}</span>{" "}
-                      {rsvp_success.submitted}
-                    </p>
-                    <p translate="no" className="text-left text-lg -mt-4">
-                      {rsvp_success.change_by.map((item, index) =>
-                        typeof item === "string" ? (
-                          item
-                        ) : (
-                          <span key={index} className="font-bold">
-                            {item.text}
-                          </span>
-                        )
-                      )}
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
       </div>
     </section>
   );

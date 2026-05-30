@@ -36,8 +36,8 @@ const translations = {
       button: "Hald av datoen",
     },
     saveTheDate_section: {
-      title: "HALD",
-      title_cursive: "av datoen",
+      title: "",
+      title_cursive: "Hald av datoen",
       date: "8. mai 2027",
       place: "i Oslo",
       place_ceremony: "Seremonien er i Klimahuset i Botanisk hage",
@@ -176,10 +176,10 @@ const translations = {
       }
     },
     rsvp_section: {
-      top_title: "Svar",
-      title: { main: "Stadfest at", sub: "du kjem" },
+      top_title: "",
+      title: { main: "", sub: "Stadfest at du kjem" },
       description_1: [
-        { bold: true, text: "Svar gjerne så fort du kan, og seinast 1. november" },
+        { bold: true, text: "Svar gjerne så fort du kan, og seinast 1. oktober" },
         " Fyll ut skjemaet.",
       ],
       description_2:
@@ -221,7 +221,7 @@ const translations = {
       },
     },
     registry_section: {
-      title: { main: "Gåver", sub: "_" },
+      title: { main: "", sub: "Gåver" },
       description_1:
         "Your presence at our wedding is truly the greatest gift we could ask for!",
       description_2:
