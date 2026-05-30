@@ -49,8 +49,8 @@ const translations = {
     },
     schedule_section: {
       title: {
-        main: "Tidslinje",
-        sub: "",
+        main: "",
+        sub: "Tidslinje",
       },
       description:
         "Fleire tider og meir detaljar kjem etter som dei blir klare.",
