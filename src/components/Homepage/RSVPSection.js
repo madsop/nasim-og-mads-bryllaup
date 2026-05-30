@@ -1,7 +1,6 @@
 /**
  * @file RSVPSection.js
- * @description This component manages the RSVP section of the wedding website. It allows guests to search their names, select attendance options, and submit special
- *              requests. The data is retrieved and updated in Firebase Firestore, and email notifications are sent upon submission. Multilingual!
+ * @description This component manages the RSVP section of the wedding website.
  * @author Emanuele Sgroi
  * @date 19 October 2024
  */
