@@ -113,19 +113,12 @@ This multilingual wedding website template is designed for an elegant and modern
    Create a `.env.local` file in the root directory and add your environment variables:
 
 ```bash
-# Email js
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_public_emailjs_service_id
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_public_emailjs_template_id
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_emailjs_public_key
 # Spotify
 SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 SPOTIFY_PLAYLIST_ID=your_spotify_playlist_id
 SPOTIFY_REDIRECT_URI=e.g. http://localhost:3000/api/auth/callback
 SPOTIFY_REFRESH_TOKEN=your_spotify_refresh_token
-# Other
-NEXT_PUBLIC_ADMIN_ACCESS_PASSWORD=e.g. AdminPassword123
-NEXT_PUBLIC_ALLOWED_ADMIN_EMAIL=example@youradminemail.com
 ```
 
 4.  **Run the Application:**
