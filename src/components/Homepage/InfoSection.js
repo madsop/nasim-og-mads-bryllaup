@@ -21,7 +21,7 @@ const InfoSection = ({ language }) => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
   // Destructure translation strings
-  const { title, details, accommodations, travel_transport, contact } =
+  const { title, details, accommodations, toastmaster, contact } =
     translations[language].info_section;
 
   //Extract couple contacts from env
@@ -124,12 +124,12 @@ const InfoSection = ({ language }) => {
                   item
                 ) : (
                   <span key={index} className="font-bold">
-                    {item.text}
+                    {/*{item.text}*/}
                   </span>
                 )
               )}
             </p>
-            <p translate="no" className=" mt-3">
+            {/*<p translate="no" className=" mt-3">
               {accommodations.breakfast.map((item, index) =>
                 typeof item === "string" ? (
                   item
@@ -150,70 +150,34 @@ const InfoSection = ({ language }) => {
                   </span>
                 )
               )}
-            </p>
+            </p>*/}
           </div>
           <div className="static md:hidden h-px w-[50px] bg-black opacity-50" />
 
           {/* Right Detail */}
           <div className="w-full md:w-1/2 max-w-[700px] flex flex-col justify-start items-center text-center">
             <h5 translate="no" className="mb-4">
-              {travel_transport.title}
+              {toastmaster.title}
             </h5>
-
             <p translate="no">
-              {travel_transport.description_1.map((item, index) =>
-                typeof item === "string" ? (
-                  item
-                ) : (
-                  <span key={index} className="font-bold">
+              {toastmaster.description_1.map((item, index) =>
+                  typeof item === "string" ? (
+                      item
+                  ) : (
+                      <span key={index} className="font-bold">
                     {item.text}
                   </span>
-                )
-              )}
-            </p>
-
-            <p translate="no" className="font-bold mb-1">
-              {travel_transport.transport_details.arrival.title}
-            </p>
-
-            <p translate="no" className="mb-1">
-              {travel_transport.transport_details.arrival.desc1.map(
-                (item, index) =>
-                  typeof item === "string" ? (
-                    item
-                  ) : (
-                    <span key={index} className="font-bold">
-                      {item.text}
-                    </span>
                   )
               )}
             </p>
             <p translate="no">
-              {travel_transport.transport_details.arrival.desc2.map(
-                (item, index) =>
+              {toastmaster.about.map((item, index) =>
                   typeof item === "string" ? (
-                    item
+                      item
                   ) : (
-                    <span key={index} className="font-bold">
-                      {item.text}
-                    </span>
-                  )
-              )}
-            </p>
-
-            <p translate="no" className="font-bold mb-1">
-              {travel_transport.transport_details.departure.title}
-            </p>
-
-            <p translate="no">
-              {travel_transport.transport_details.departure.desc1.map(
-                (item, index) =>
-                  typeof item === "string" ? (
-                    item
-                  ) : (
-                    <span key={index} className="font-bold">
-                      {item.text}
-                    </span>
+                      <span key={index} className="font-bold">
+                    {item.text}
+                  </span>
                   )
               )}
             </p>

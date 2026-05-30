@@ -137,9 +137,9 @@ const translations = {
         button_loc: "Sjå lokalet",
       },
       accommodations: {
-        title: "Accommodations",
+        title: "Overnatting",
         description_1: [
-          "For our international guests, we are pleased to offer accommodation at the venue's hotel on the ",
+          "For dokker som kjem tilreisande, jobbar vi med å få på plass ein avtale med hotell.",
           {
             bold: true,
             text: "Friday 25th of July, Saturday 26th of July, and Sunday 27th of July.",
@@ -156,59 +156,34 @@ const translations = {
           " The checkout is on Monday at 11:00 AM, please have your breakfast before then.",
         ],
       },
-      travel_transport: {
-        title: "Travel & Transportation",
-        description_1: [
-          "For our international guests, we will provide transportation from the airport to the venue on Friday, 25th of July, and from the venue to the airport on Monday, 28th of July.",
-        ],
-        description_2: [
-          {
-            bold: true,
-            text: "Before booking your travel, please contact us to let us know the time and the airport that works best for you. We will then organize a group transport that fits the majority. Please do it before the 26th of May 2025.",
-          },
-        ],
-        description_3: [
-          "The closest airports are Katowice Airport (KTW), Warsaw Modlin Airport (WMI), and Warsaw Chopin Airport (WAW).",
-        ],
-        description_4: [
-          "We will try our best to accommodate everyone. If you cannot land/depart at the same day/time as everyone else, we will help you organize another way of getting to and from the venue.",
-        ],
-        transport_details: {
-          arrival: {
-            title: "Friday 25th of July",
-            desc1: [
-              { bold: true, text: "Warsaw Airport (WAW):" },
-              " Bus leaves around 7:30PM - Karolina will be waiting at the arrivals.",
-            ],
-            desc2: [
-              { bold: true, text: "Katowice Airport:" },
-              " Bus leaves around 5:00PM - Emanuele will be waiting at the arrivals.",
-            ],
-          },
-          departure: {
-            title: "Monday 28th of July",
-            desc1: [
-              { bold: true, text: "" },
-              " Buses for both airports leave at 12:00 PM",
-            ],
-          },
-        },
-      },
       contact: {
         title: "Kontakt oss",
         // Email added on the front end
         // numbers added on the front end
       },
+      toastmaster: {
+        title: "Toastmaster",
+        description_1: [
+            "Ønskjer du å seie noko i bryllaupet? ",
+          {
+            bold: true,
+            text: "Avtal det direkte med toastmaster",
+          },
+        ],
+        about: [
+            "Meir info om toastmaster kjem her når det er klart",
+        ],
+      }
     },
     rsvp_section: {
       top_title: "Svar",
       title: { main: "Stadfest at", sub: "du kjem" },
       description_1: [
-        { bold: true, text: "Please RSVP by the 26th of May 2025!" },
-        " Simply search for your name on the form and confirm your attendance.",
+        { bold: true, text: "Svar gjerne så fort du kan, og seinast 1. november" },
+        " Fyll ut skjemaet.",
       ],
       description_2:
-        "Please leave us a note if you have any special requests, dietary restrictions, or if there’s anything else you’d like to discuss. We want to make sure everyone is comfortable and has an amazing time!",
+        "Vi ber om at kvar enkelt som kjem fyllar ut skjemaet. Det gjer planlegginga enklare for oss, og gir oss lågare skuldre.",
       label: "Search your name in the guests list",
       placeholder: "Search for your name",
       no_found: "No guests found with this name",
