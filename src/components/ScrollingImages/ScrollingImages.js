@@ -36,6 +36,7 @@ const ScrollingImages = () => {
     images.g_1_4,
     images.g_1_5,
     images.g_1_6,
+    images.g_1_7,
   ];
 
   // Group for second layer of images
@@ -46,6 +47,8 @@ const ScrollingImages = () => {
     images.g_2_4,
     images.g_2_5,
     images.g_2_6,
+    images.g_2_7,
+    images.g_2_8,
   ];
 
   // Group for third layer of images
@@ -56,6 +59,7 @@ const ScrollingImages = () => {
     images.g_3_4,
     images.g_3_5,
     images.g_3_6,
+    images.g_3_7,
   ];
 
   return (

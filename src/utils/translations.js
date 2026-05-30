@@ -115,8 +115,8 @@ const translations = {
     },
     info_section: {
       title: {
-        main: "THE",
-        sub: "Details",
+        main: "",
+        sub: "Detaljane",
       },
       details: {
         when_where: "Kor og når?",
