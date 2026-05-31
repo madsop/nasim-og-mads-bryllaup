@@ -179,8 +179,8 @@ const translations = {
       top_title: "",
       title: { main: "", sub: "Stadfest at du kjem" },
       description_1: [
-        { bold: true, text: "Svar gjerne så fort du kan, og seinast 1. oktober" },
-        " Fyll ut skjemaet.",
+        { bold: true, text: "Svar gjerne så fort du kan, og seinast 1. oktober." },
+        "",
       ],
       description_2:
         "Vi ber om at kvar enkelt som kjem fyllar ut skjemaet. Det gjer planlegginga enklare for oss, og gir oss lågare skuldre.",

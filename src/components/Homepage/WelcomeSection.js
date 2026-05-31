@@ -153,7 +153,7 @@ const WelcomeSection = ({ language }) => {
         <div className="h-full flex-1 max-md:hidden z-0">
           <Image
             src={images.welcome_1}
-            alt={`welcom_1`}
+            alt={``}
             width={500}
             height={700}
             quality={100}
@@ -165,7 +165,7 @@ const WelcomeSection = ({ language }) => {
         <div className="h-full flex-1 z-0">
           <Image
             src={images.welcome_2}
-            alt={`welcom_2`}
+            alt={``}
             width={500}
             height={700}
             quality={100}
@@ -177,7 +177,7 @@ const WelcomeSection = ({ language }) => {
         <div className="h-full flex-1 max-md:hidden  z-0">
           <Image
             src={images.welcome_3}
-            alt={`welcom_3`}
+            alt={``}
             width={500}
             height={700}
             quality={100}
