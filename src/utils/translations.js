@@ -40,7 +40,7 @@ const translations = {
       title_cursive: "Hald av datoen",
       date: "8. mai 2027",
       place: "i Oslo",
-      place_ceremony: "Seremonien er i Klimahuset i Botanisk hage",
+      place_ceremony: "Seremonien, med dei næraste, er i Klimahuset i Botanisk hage",
       place_party: "Festen er i Grefsen og Disen velhus",
       story_1: "Vi møttest",
       story_2: "Vi forlova oss",
