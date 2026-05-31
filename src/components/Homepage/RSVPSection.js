@@ -18,6 +18,9 @@ const RSVPSection = ({ language }) => {
     title,
     description_1,
     description_2,
+    description_3,
+    description_4,
+    description_5
   } = translations[language].rsvp_section;
 
   const schemaURL = process.env.NEXT_PUBLIC_RSVP;
@@ -148,6 +151,15 @@ const RSVPSection = ({ language }) => {
             </p>
             <p translate="no" className="text-left">
               {description_2}
+            </p>
+            <p translate="no" className="text-left">
+              {description_3}
+            </p>
+            <p translate="no" className="text-left">
+              {description_4}
+            </p>
+            <p translate="no" className="text-left">
+              {description_5}
             </p>
           </div>
       </div>

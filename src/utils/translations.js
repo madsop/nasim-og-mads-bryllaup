@@ -167,11 +167,16 @@ const translations = {
             "Ønskjer du å seie noko i bryllaupet? ",
           {
             bold: true,
-            text: "Avtal det direkte med toastmaster",
+            text: "Avtal det direkte med toastmaster.",
           },
         ],
         about: [
-            "Meir info om toastmaster kjem her når det er klart",
+            "Toastmaster er vår gode venninne ",
+          {
+            bold: true,
+            text: "Pernille Bonnevie Hansen"
+          },
+            "."
         ],
       }
     },
@@ -184,6 +189,12 @@ const translations = {
       ],
       description_2:
         "Vi ber om at kvar enkelt som kjem fyllar ut skjemaet. Det gjer planlegginga enklare for oss, og gir oss lågare skuldre.",
+      description_3:
+        "Vi sender invitasjon til dei vi vil invitere, og da sjølvsagt med følge.",
+      description_4:
+        "Så om du har komme over denne sida på anna vis, men ikkje fått invitasjon frå oss, får vi heller ta det igjen ein annan gong.",
+      description_5:
+        "Feiringa vår er barnefri.",
       label: "Search your name in the guests list",
       placeholder: "Search for your name",
       no_found: "No guests found with this name",
