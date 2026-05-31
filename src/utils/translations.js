@@ -188,7 +188,7 @@ const translations = {
       description_3:
         "Vi sender personleg invitasjon til dei vi vil invitere. Så om du har komme over denne sida på anna vis, men ikkje fått invitasjon frå oss, får vi heller ta det igjen ein annan gong.",
       description_4:
-        "Feiringa vår er barnefri, men vi håper vi har gitt dokker god nok tid til å skaffe barnevakt.",
+        "Feiringa vår er barnefri, men vi håper vi er tidlig nok ute til at dere som trenger det får skaffet barnevakt.",
       description_5:
         "",
       label: "Search your name in the guests list",
