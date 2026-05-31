@@ -69,6 +69,8 @@ const ScrollingImages = () => {
   const group6 = [
       images.g_3_7,
       images.g_1_6,
+      images.welcome_1,
+      images.welcome_3,
   ];
 
   return (
