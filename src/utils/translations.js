@@ -33,11 +33,10 @@ const translations = {
       minute: "Minutt",
       seconds: "Sekund",
       second: "sekund",
-      button: "Hald av datoen",
     },
     saveTheDate_section: {
       title: "",
-      title_cursive: "Hald av datoen",
+      title_cursive: "Bli med på å feire oss",
       date: "8. mai 2027",
       place: "i Oslo",
       place_ceremony: "Seremonien, med dei næraste, er i Klimahuset i Botanisk hage",

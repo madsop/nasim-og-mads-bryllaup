@@ -12,7 +12,6 @@ import translations from "@/utils/translations";
 import images from "@/utils/imagesImport";
 import Image from "next/image";
 import { getCountdown } from "@/utils/countdownHelper";
-import { Link as ScrollLink } from "react-scroll";
 import Tilt from "react-parallax-tilt";
 
 const WelcomeSection = ({ language }) => {
@@ -42,7 +41,6 @@ const WelcomeSection = ({ language }) => {
     minute,
     seconds,
     second,
-    button,
   } = translations[language].welcome_section;
 
   // If it's still rendering on the server, don't show the countdown
@@ -129,19 +127,6 @@ const WelcomeSection = ({ language }) => {
               </p>
             </div>
           </div>
-        )}
-
-        {!countdown.message && (
-          <ScrollLink
-            to="savethedate-section"
-            smooth={true}
-            duration={1000}
-            offset={-70}
-            className="mt-20 btn btn-gold"
-            translate="no"
-          >
-            {button}
-          </ScrollLink>
         )}
       </div>
 
