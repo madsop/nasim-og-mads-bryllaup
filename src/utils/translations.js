@@ -61,13 +61,13 @@ const translations = {
             time: "15:00",
             title: "Seremonien startar",
           },
-          dinner: {
-            time: "6:00 PM",
-            title: "Dinner Served",
+          arrival: {
+            time: "17:00",
+            title: "Velkommen"
           },
-          dance: {
-            time: "6:00 PM",
-            title: "First Dance",
+          dinner: {
+            time: "18.00",
+            title: "Middag",
           },
           photo: {
             time: "8:00 - 11:00 PM",
@@ -81,14 +81,10 @@ const translations = {
             time: "22:30 PM",
             title: "Cake Cutting",
           },
-          games: {
-            time: "12:30 AM",
-            title: "Party Games",
-          },
-          party: {
-            time: "All Night",
-            title: "Eat, Drink, Dance, Repeat!",
-          },
+          wrapup: {
+            time: "Seint",
+            title: "Vi rundar av ein gong utpå natta",
+          }
         },
       },
       day_2: {
@@ -190,11 +186,11 @@ const translations = {
       description_2:
         "Vi ber om at kvar enkelt som kjem fyllar ut skjemaet. Det gjer planlegginga enklare for oss, og gir oss lågare skuldre.",
       description_3:
-        "Vi sender invitasjon til dei vi vil invitere, og da sjølvsagt med følge.",
+        "Vi sender personleg invitasjon til dei vi vil invitere. Så om du har komme over denne sida på anna vis, men ikkje fått invitasjon frå oss, får vi heller ta det igjen ein annan gong.",
       description_4:
-        "Så om du har komme over denne sida på anna vis, men ikkje fått invitasjon frå oss, får vi heller ta det igjen ein annan gong.",
+        "Feiringa vår er barnefri, men vi håper vi har gitt dokker god nok tid til å skaffe barnevakt.",
       description_5:
-        "Feiringa vår er barnefri.",
+        "",
       label: "Search your name in the guests list",
       placeholder: "Search for your name",
       no_found: "No guests found with this name",

@@ -39,11 +39,21 @@ const ScheduleSection = ({ language }) => {
           title: day_1.events.ceremony.title,
           icon: "/icons/ceremony.svg",
         },
-        // {
-        //   time: day_1.events.dinner.time,
-        //   title: day_1.events.dinner.title,
-        //   icon: "/icons/dinner.svg",
-        // },
+        {
+          time: day_1.events.arrival.time,
+          title: day_1.events.arrival.title,
+          icon: "/icons/met.svg",
+        },
+        {
+          time: day_1.events.dinner.time,
+          title: day_1.events.dinner.title,
+          icon: "/icons/dinner.svg",
+        },
+        {
+          time: day_1.events.wrapup.time,
+          title: day_1.events.wrapup.title,
+          icon: "/icons/end.svg",
+        },
         // // {
         // //   time: day_1.events.dance.time,
         // //   title: day_1.events.dance.title,
