@@ -181,6 +181,17 @@ const InfoSection = ({ language }) => {
                   )
               )}
             </p>
+            <p translate="no">
+              {toastmaster.phone.map((item, index) =>
+                  typeof item === "string" ? (
+                      item
+                  ) : (
+                      <span key={index} className="font-bold">
+                    {item.text}
+                  </span>
+                  )
+              )}
+            </p>
           </div>
         </div>
         <div className="static md:hidden h-px w-[50px] bg-black opacity-50" />

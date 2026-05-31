@@ -174,6 +174,14 @@ const translations = {
           },
             "."
         ],
+        phone: [
+            "Kontakt ho på ",
+          {
+            bold: true,
+            text: "99774337",
+          },
+            "."
+          ],
       }
     },
     rsvp_section: {
