@@ -124,9 +124,20 @@ const InfoSection = ({ language }) => {
                   item
                 ) : (
                   <span key={index} className="font-bold">
-                    {/*{item.text}*/}
+                    {item.text}
                   </span>
                 )
+              )}
+            </p>
+            <p translate="no">
+              {accommodations.description_2.map((item, index) =>
+                  typeof item === "string" ? (
+                      item
+                  ) : (
+                      <span key={index} className="font-bold">
+                    {item.text}
+                  </span>
+                  )
               )}
             </p>
             {/*<p translate="no" className=" mt-3">

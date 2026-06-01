@@ -134,11 +134,15 @@ const translations = {
       accommodations: {
         title: "Overnatting",
         description_1: [
-          "For dokker som kjem tilreisande, jobbar vi med å få på plass ein avtale med hotell.",
+          "For dokker som kjem tilreisande, tilrår vi å bu på ",
           {
             bold: true,
-            text: "Friday 25th of July, Saturday 26th of July, and Sunday 27th of July.",
+            text: "Thon Hotell Linne",
           },
+            "."
+        ],
+        description_2: [
+            "Vi har ein avtale med dei om billige både enkelt- og dobbeltrom."
         ],
         breakfast: [
           { bold: true, text: "Breakfast" },
