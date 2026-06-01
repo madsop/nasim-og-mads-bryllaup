@@ -39,8 +39,8 @@ const translations = {
       title_cursive: "Bli med på å feire oss",
       date: "8. mai 2027",
       place: "i Oslo",
-      place_ceremony: "Seremonien, med dei næraste, er i Klimahuset i Botanisk hage",
-      place_party: "Festen er i Grefsen og Disen velhus",
+      place_ceremony: "Seremonien, med dei næraste, er i Klimahuset i Botanisk hage.",
+      place_party: "Festen er i Grefsen og Disen velhus.",
       story_1: "Vi møttest",
       story_2: "Vi forlova oss",
       story_3_future: "Vi giftar oss",
@@ -53,8 +53,17 @@ const translations = {
       },
       description:
         "Fleire tider og meir detaljar kjem etter som dei blir klare.",
+      day_0: {
+        title: "Fredag 7.mai",
+        events: {
+          dinner: {
+            time: "18.00",
+            title: "Uformell middag"
+          }
+        }
+      },
       day_1: {
-        title: "Laurdag 8. mai",
+        title: "Laurdag 8.mai",
         events: {
           ceremony: {
             time: "15:00",
@@ -67,6 +76,10 @@ const translations = {
           dinner: {
             time: "18.00",
             title: "Middag",
+          },
+          party: {
+            time: "Etter middag",
+            title: "Fest"
           },
           photo: {
             time: "8:00 - 11:00 PM",
@@ -130,6 +143,13 @@ const translations = {
           'Lokalet Grefsen og Disen velhus, også kjent som "Svetter\'n", Kjelsåsveien 18, 0488 Oslo.',
         ],
         button_loc: "Sjå lokalet",
+        food: [
+          {
+            bold: true,
+            text: "Mat: ",
+          },
+          'Vi står sjølvsagt for mat og drikke.'
+        ],
       },
       accommodations: {
         title: "Overnatting",

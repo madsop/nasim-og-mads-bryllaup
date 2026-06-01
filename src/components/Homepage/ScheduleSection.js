@@ -26,11 +26,21 @@ const ScheduleSection = ({ language }) => {
   };
 
   // Destructure translation strings
-  const { title, description, day_1, day_2 } =
+  const { title, description, day_0, day_1, day_2 } =
     translations[language].schedule_section;
 
   // Group timeline data for convenience
   const timelineData = [
+    {
+      day: day_0.title,
+      events: [
+        {
+          time: day_0.events.dinner.time,
+          title: day_0.events.dinner.title,
+          icon: "/icons/dinner.svg",
+        }
+      ]
+    },
     {
       day: day_1.title,
       events: [
@@ -48,6 +58,11 @@ const ScheduleSection = ({ language }) => {
           time: day_1.events.dinner.time,
           title: day_1.events.dinner.title,
           icon: "/icons/dinner.svg",
+        },
+        {
+          time: day_1.events.party.time,
+          title: day_1.events.party.title,
+          icon: "/icons/games.svg",
         },
         {
           time: day_1.events.wrapup.time,

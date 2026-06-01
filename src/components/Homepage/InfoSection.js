@@ -84,6 +84,17 @@ const InfoSection = ({ language }) => {
             )}
           </p>
           <p translate="no" className="mt-[-16px]">
+            {details.food.map((item, index) =>
+                typeof item === "string" ? (
+                    <span key={index}>{item}</span>
+                ) : (
+                    <span key={index} className="font-bold">
+                  {item.text}
+                </span>
+                )
+            )}
+          </p>
+          <p translate="no" className="mt-[-16px]">
             {details.location.map((item, index) =>
               typeof item === "string" ? (
                 <span key={index}>{item}</span>
