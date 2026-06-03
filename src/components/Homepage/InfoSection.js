@@ -151,6 +151,17 @@ const InfoSection = ({ language }) => {
                   )
               )}
             </p>
+            <p translate="no">
+              {accommodations.description_3.map((item, index) =>
+                  typeof item === "string" ? (
+                      item
+                  ) : (
+                      <span key={index} className="font-bold">
+                    {item.text}
+                  </span>
+                  )
+              )}
+            </p>
             {/*<p translate="no" className=" mt-3">
               {accommodations.breakfast.map((item, index) =>
                 typeof item === "string" ? (

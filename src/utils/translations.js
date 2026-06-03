@@ -162,7 +162,10 @@ const translations = {
             "."
         ],
         description_2: [
-            "Vi har ein avtale med dei om billige både enkelt- og dobbeltrom."
+            "Vi har ein avtale med dei om billige både enkelt- og dobbeltrom, til henhaldsvis 1195 og 1395 kr per natt."
+        ],
+        description_3: [
+            "Dokker må booke per epost. Snakk med oss, så får dokker kode og epostadresse."
         ],
         breakfast: [
           { bold: true, text: "Breakfast" },
