@@ -208,7 +208,7 @@ const translations = {
         "",
     },
     registry_section: {
-      title: { main: "", sub: "Gåver" },
+      title: "Gåver",
       description_1:
         "Det vi ønskjer oss mest er at du blir med og feirar oss.",
       description_2:

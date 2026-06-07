@@ -6,22 +6,9 @@
  * @date 19 October 2024
  */
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import images from "@/utils/imagesImport";
 import Image from "next/image";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { IoCopyOutline } from "react-icons/io5";
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
 import translations from "@/utils/translations";
 
@@ -32,7 +19,6 @@ const RegistrySection = ({ language }) => {
     description_1,
     description_2,
     description_3,
-    description_4,
     thanks,
   } = translations[language].registry_section;
 
@@ -57,7 +43,7 @@ const RegistrySection = ({ language }) => {
 
   // Render a custom dashed line on screen
   const dashedLine = Array(3)
-    .fill()
+    .fill("")
     .map((_, index) => (
       <div key={index} className="w-[2px] h-[5px] my-[3px] bg-gold" />
     ));
@@ -98,14 +84,11 @@ const RegistrySection = ({ language }) => {
           className="mb-4 w-[90px] h-auto brightness-95"
         />
         <div className="flex flex-col justify-center items-center">
-          <h3 translate="no" className="text-white font-bold z-20 ">
-            {title.main}
-          </h3>
           <h3
             translate="no"
-            className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light -mt-8 md:-mt-10"
+            className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light md:-mt-5"
           >
-            {title.sub}
+            {title}
           </h3>
         </div>
       </motion.div>
