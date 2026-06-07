@@ -47,10 +47,7 @@ const translations = {
       story_3_past: "Vi gifta oss",
     },
     schedule_section: {
-      title: {
-        main: "",
-        sub: "Tidslinje",
-      },
+      title: "Tidslinje",
       description:
         "Fleire tider og meir detaljar kjem etter som dei blir klare.",
       day_0: {
@@ -114,10 +111,7 @@ const translations = {
       },
     },
     info_section: {
-      title: {
-        main: "",
-        sub: "Detaljane",
-      },
+      title: "Detaljane",
       details: {
         when_where: "Kor og når?",
         dates: [

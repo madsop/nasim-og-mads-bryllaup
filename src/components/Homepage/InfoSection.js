@@ -51,14 +51,11 @@ const InfoSection = ({ language }) => {
           className="mb-4 w-[95px] h-auto brightness-95"
         />
         <div className="flex justify-center items-start">
-          <h3 translate="no" className=" font-bold z-20  -mr-8">
-            {title.main}
-          </h3>
           <h3
             translate="no"
             className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light"
           >
-            {title.sub}
+            {title}
           </h3>
         </div>
       </motion.div>

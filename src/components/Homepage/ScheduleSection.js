@@ -94,14 +94,11 @@ const ScheduleSection = ({ language }) => {
           className="mb-4 w-[95px] h-auto brightness-95"
         />
         <div className="flex flex-col justify-center items-center">
-          <h3 translate="no" className="text-white font-bold z-20 ">
-            {title.main}
-          </h3>
           <h3
             translate="no"
-            className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light -mt-8 md:-mt-10"
+            className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light -mt-7"
           >
-            {title.sub}
+            {title}
           </h3>
         </div>
         <p translate="no" className=" text-center text-white ">
