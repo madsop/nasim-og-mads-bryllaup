@@ -55,7 +55,7 @@ const LanguageDropdown = ({ detectedLanguage, setLanguage }) => {
     return null; // Prevent rendering until language is set
   }
 
-  return (
+  return languages.length <= 1 ? null : (
     <div className="absolute right-4 inline-block text-left z-[9999]">
       {/* The Select (Closed Menu) */}
       <div
