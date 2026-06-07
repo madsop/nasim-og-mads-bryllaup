@@ -35,8 +35,7 @@ const translations = {
       second: "sekund",
     },
     saveTheDate_section: {
-      title: "",
-      title_cursive: "Bli med på å feire oss",
+      title: "Bli med på å feire oss",
       date: "8. mai 2027",
       place: "i Oslo",
       place_ceremony: "Seremonien, med dei næraste, er i Klimahuset i Botanisk hage.",
@@ -86,27 +85,6 @@ const translations = {
             time: "Seint",
             title: "Vi rundar av ein gong utpå natta",
           }
-        },
-      },
-      day_2: {
-        title: "Day 2",
-        events: {
-          after: {
-            time: "3:00 PM",
-            title: "After Party Starts",
-          },
-          vespa: {
-            time: "3:00 - 8:00 PM",
-            title: "Vespa Bar",
-          },
-          party_continues: {
-            time: "All Day",
-            title: "Eat, Drink, Dance, Repeat!",
-          },
-          end: {
-            time: "9:00 PM",
-            title: "The End",
-          },
         },
       },
     },
@@ -190,7 +168,6 @@ const translations = {
       title: "Stadfest at du kjem",
       description_1: [
         { bold: true, text: "Svar gjerne så fort du kan, og seinast 1. oktober." },
-        "",
       ],
       description_2:
         "Vi ber om at kvar enkelt som kjem fyllar ut skjemaet. Det gjer planlegginga enklare for oss, og gir oss lågare skuldre.",
@@ -198,8 +175,6 @@ const translations = {
         "Vi sender personleg invitasjon til dei vi vil invitere. Så om du har komme over denne sida på anna vis, men ikkje fått invitasjon frå oss, får vi heller ta det igjen ein annan gong.",
       description_4:
         "Feiringa vår er barnefri, men vi håper vi er tidlig nok ute til at dere som trenger det får skaffet barnevakt.",
-      description_5:
-        "",
     },
     registry_section: {
       title: "Gåver",
@@ -207,8 +182,6 @@ const translations = {
         "Det vi ønskjer oss mest er at du blir med og feirar oss.",
       description_2:
         "Vi har alt vi treng, men vi liker jo å reise, så eit bidrag til reisekontoen vil vi sette pris på.",
-      description_3:
-        "",
     },
     music_section: {
       title: { main: "OUR", sub: "Playlist" },
@@ -229,8 +202,7 @@ const translations = {
     },
     footer: {
       text_1: "Bryllaupsside av og for ",
-      text_2: "",
-      text_3: "Designmal av",
+      text_2: "Designmal av",
     },
     not_found: {
       message: "The page you are looking for does not exist.",

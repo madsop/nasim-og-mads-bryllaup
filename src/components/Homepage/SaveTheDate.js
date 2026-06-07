@@ -36,7 +36,6 @@ const SaveTheDate = ({ language }) => {
   // Destructure translation strings
   const {
     title,
-    title_cursive,
     date,
     place,
     place_ceremony,
@@ -93,14 +92,11 @@ const SaveTheDate = ({ language }) => {
           viewport={{ once: true, amount: 0.2 }}
           className="flex flex-col justify-center items-center"
         >
-          <h3 translate="no" className=" font-bold z-20 ">
-            {title}
-          </h3>
           <h3
             translate="no"
-            className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light -mt-8 md:-mt-10"
+            className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light -mt-5"
           >
-            {title_cursive}
+            {title}
           </h3>
         </motion.div>
 
