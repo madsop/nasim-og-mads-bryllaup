@@ -85,14 +85,6 @@ const translations = {
             time: "8:00 - 11:00 PM",
             title: "Photo Booth",
           },
-          pig: {
-            time: "12:00 AM",
-            title: "Special Dish",
-          },
-          cake_cutting: {
-            time: "22:30 PM",
-            title: "Cake Cutting",
-          },
           wrapup: {
             time: "Seint",
             title: "Vi rundar av ein gong utpå natta",
@@ -167,16 +159,6 @@ const translations = {
         description_3: [
             "Dokker må booke per epost. Snakk med oss, så får dokker kode og epostadresse."
         ],
-        breakfast: [
-          { bold: true, text: "Breakfast" },
-          " is included with your stay and will be served from ",
-          { bold: true, text: "9 AM to 12 PM" },
-          " each morning.",
-        ],
-        checkout: [
-          { bold: true, text: "Hotel/Apartment Checkout:" },
-          " The checkout is on Monday at 11:00 AM, please have your breakfast before then.",
-        ],
       },
       contact: {
         title: "Kontakt oss",
@@ -211,8 +193,7 @@ const translations = {
       }
     },
     rsvp_section: {
-      top_title: "",
-      title: { main: "", sub: "Stadfest at du kjem" },
+      title: "Stadfest at du kjem",
       description_1: [
         { bold: true, text: "Svar gjerne så fort du kan, og seinast 1. oktober." },
         "",

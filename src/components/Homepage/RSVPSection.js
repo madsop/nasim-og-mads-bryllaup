@@ -10,11 +10,11 @@ import images from "@/utils/imagesImport";
 import { motion, useScroll, useTransform } from "framer-motion";
 import translations from "@/utils/translations";
 import Image from "next/image";
+import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
 const RSVPSection = ({ language }) => {
   // Destructure translation strings
   const {
-    top_title,
     title,
     description_1,
     description_2,
@@ -24,22 +24,6 @@ const RSVPSection = ({ language }) => {
   } = translations[language].rsvp_section;
 
   const schemaURL = process.env.NEXT_PUBLIC_RSVP;
-
-  // Variants for framer motion animation
-  const containerVariants = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.2,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-  const letterVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
 
   const ref = useRef(null); // reference for framer motion animation
 
@@ -64,20 +48,6 @@ const RSVPSection = ({ language }) => {
           backgroundImage: `url(${images.collage.src})`,
         }}
       >
-        <motion.h1
-          initial="hidden"
-          whileInView="visible"
-          variants={containerVariants}
-          viewport={{ once: true, amount: 0.4 }}
-          translate="no"
-          className="absolute left-1/2 transform -translate-x-1/2 z-20 transition-transform text-9xl text-gold"
-        >
-          {top_title.split("").map((char, index) => (
-            <motion.span key={index} variants={letterVariants}>
-              {char}
-            </motion.span>
-          ))}
-        </motion.h1>
         <div className="overlay z-0"></div>
       </div>
 
@@ -97,36 +67,17 @@ const RSVPSection = ({ language }) => {
             className="absolute top-0 left-0 w-full h-full object-cover transform "
           />
         </motion.div>
-
-        <motion.h1
-          initial="hidden"
-          whileInView="visible"
-          variants={containerVariants}
-          viewport={{ once: true, amount: 0.4 }}
-          translate="no"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 transition-transform text-7xl text-gold"
-        >
-          {top_title.split("").map((char, index) => (
-            <motion.span key={index} variants={letterVariants}>
-              {char}
-            </motion.span>
-          ))}
-        </motion.h1>
-        <div className="overlay z-0"></div>
       </div>
 
       {/* main section */}
       <div className="w-full py-12 px-4 sm:px-6 xl:px-12 bg-cream flex flex-col lg:flex-row justify-center gap-4 lg:gap-12 xl:gap-44">
           <div className="flex flex-col items-start relative w-full max-w-full lg:max-w-lg text-left gap-0 lg:gap-6">
             <div className="flex flex-col items-start max-sm:w-full max-sm:items-center">
-              <h3 translate="no" className=" font-bold z-20 ml-6 sm:ml-16">
-                {title.main}
-              </h3>
               <h3
                 translate="no"
-                className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light -mt-10"
+                className="text-gold text-6xl sm:text-8xl alex-brush z-10 transform font-light -mt-5 z-20 "
               >
-                {title.sub}
+                {title}
               </h3>
             </div>
             <p translate="no" className="text-left">

@@ -7,7 +7,7 @@
 
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import translations from "@/utils/translations";
 import images from "@/utils/imagesImport";
 import Image from "next/image";
@@ -24,10 +24,6 @@ const SaveTheDate = ({ language }) => {
   const secondaryVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
-  };
-  const tertiaryVariants = {
-    hidden: { opacity: 0, scale: 0 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
   };
   const quartaryVariants = {
     hidden: { opacity: 0 },
@@ -53,7 +49,7 @@ const SaveTheDate = ({ language }) => {
 
   // Render custom dashed line
   const dashedLine = Array(10)
-    .fill()
+    .fill("")
     .map((_, index) => (
       <div key={index} className="w-[2px] h-[5px] my-[3px] bg-gold" />
     ));
