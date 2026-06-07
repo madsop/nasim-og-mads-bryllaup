@@ -20,7 +20,6 @@ import { IoIosAddCircle } from "react-icons/io";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { useToast } from "@/hooks/use-toast";
-import { Footer } from "@/components";
 import { motion } from "framer-motion";
 import translations from "@/utils/translations";
 
@@ -405,9 +404,6 @@ const MusicSection = ({ language }) => {
         onTimeUpdate={handleTimeUpdate}
         onEnded={handleAudioEnd}
       />
-
-      {/* Footer is called here for convenience */}
-      <Footer language={language} />
     </section>
   );
 };

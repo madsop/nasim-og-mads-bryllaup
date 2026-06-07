@@ -16,9 +16,9 @@ const Footer = ({ language }) => {
     <footer className="absolute bottom-0 w-full text-white text-center z-20 flex max-sm:flex-col-reverse justify-center px-4 gap-1">
       <p translate="no" className="text-xs md:text-base tracking-wide">
         {text_1}
-        <IoIosHeart className="inline text-red-500 mx-1 h-5 w-5" /> {text_2}
-        <span className="text-gold font-semibold">{footer_him}</span> &amp;{" "}
-        <span className="text-gold font-semibold">{footer_her}</span>{" "}
+      <span className="text-gold font-semibold">{footer_him}</span>
+        <IoIosHeart className="inline text-red-500 mx-1 h-5 w-5" />{text_2}
+        <span className="text-gold font-semibold">{footer_her}</span>
       </p>
       <p translate="no" className="text-xs md:text-base tracking-wide">
         <span className="text-white max-sm:hidden">-</span>{" "}

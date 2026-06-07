@@ -17,7 +17,7 @@ import {
   InfoSection,
   RSVPSection,
   RegistrySection,
-  MusicSection,
+  Footer,
 } from "@/components";
 import LanguageDetector from "@/components/LanguageDetector/LanguageDetector";
 
@@ -78,6 +78,8 @@ export default function Home() {
 
         {/* Song Requests Section */}
         {/*<MusicSection language={language} />*/}
+
+        <Footer language={language} />
       </div>
     </main>
   );

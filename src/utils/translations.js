@@ -225,41 +225,6 @@ const translations = {
         "Feiringa vår er barnefri, men vi håper vi er tidlig nok ute til at dere som trenger det får skaffet barnevakt.",
       description_5:
         "",
-      label: "Search your name in the guests list",
-      placeholder: "Search for your name",
-      no_found: "No guests found with this name",
-      multiple_guests_1: {
-        hi: "Hi ",
-        you: " You, ",
-        and: " and ",
-        are_invited:
-          ", are warmly invited to join us on our special day. Celebrating with all of you will make it unforgettable!",
-      },
-      multiple_guests_2:
-        "Select who is attending the wedding. We hope all of you can make it.",
-      single_guest_1: {
-        hi: "Hi ",
-        are_invited:
-          " you are warmly invited to join us on our special day. Celebrating with you will make it unforgettable!",
-      },
-      single_guest_2: "Are you attending the wedding?",
-      answers: { yes: "Yes", no: "No", unknown: "Don't know yet" },
-      note_placeholder: "Would you like to leave a note?",
-      rsvp_success: {
-        thanks: "Thank you!",
-        submitted: " Your RSVP has been submitted.",
-        change_by: [
-          "Remember that you can change the attendance any time before the ",
-          { bold: true, text: "26th of May 2025" },
-          ".",
-        ],
-      },
-      error_enter_name: "Please enter your answer before submitting",
-      error_submitting: "Error submitting RSVP. Please try again.",
-      button: {
-        submit: "Send RSVP",
-        loading: "Loading...",
-      },
     },
     registry_section: {
       title: { main: "", sub: "Gåver" },
@@ -288,8 +253,8 @@ const translations = {
       },
     },
     footer: {
-      text_1: "Website created with ",
-      text_2: "by ",
+      text_1: "Bryllaupsside av og for ",
+      text_2: "",
       text_3: "Designmal av",
     },
     not_found: {
