@@ -107,6 +107,7 @@ const translations = {
           'Lokalet Grefsen og Disen velhus, også kjent som "Svetter\'n", Kjelsåsveien 18, 0488 Oslo.',
         ],
         button_loc: "Sjå lokalet",
+        view_map: "Finn lokalet på kartet",
         food: [
           {
             bold: true,

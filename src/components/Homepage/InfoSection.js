@@ -115,6 +115,18 @@ const InfoSection = ({ language }) => {
             />
             {details.button_loc}
           </Link>
+          <Link
+              href={`https://maps.app.goo.gl/YQdqTiD36BesiVjUA`}
+              target="_blank"
+              className="flex justify-center items-center gap-1 border border-gold rounded-lg px-2 py-1 mt-2 font-light text-sm"
+          >
+            <Image
+                src={images.location}
+                alt="Location"
+                className="w-auto h-[25px]"
+            />
+            {details.view_map}
+          </Link>
         </div>
 
         <div className="static md:hidden h-px w-[50px] bg-black opacity-50" />
